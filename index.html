@@ -104,6 +104,26 @@ p{margin:0}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(50%)}}
 @media (prefers-reduced-motion: reduce){.ticker-track{animation:none}}
 
+/* ---------- News ---------- */
+.news-wrap{padding-top:28px}
+.news-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-columns:6px 1fr}
+.news-stripe{background:linear-gradient(180deg,var(--gold-bright),var(--teal))}
+.news-body{padding:28px 30px 26px}
+.news-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.news-badge{background:var(--gold-soft);color:#7a5c0d;border:1px solid #e8d194;font-weight:900;font-size:.8rem;padding:5px 12px;border-radius:999px}
+@media (prefers-color-scheme: dark){.news-badge{color:#eec95e;border-color:#5c4a17}}
+.news-date{color:var(--muted);font-size:.88rem;font-weight:700}
+.news-body h2{font-size:clamp(1.35rem,3vw,1.85rem);font-weight:900;line-height:1.45}
+.news-lead{color:var(--ink);margin-top:10px;font-size:1.02rem}
+.news-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;list-style:none;padding:0}
+.news-points li{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:.93rem;font-weight:700;line-height:1.7}
+.news-points li b{display:block;color:var(--teal-dark);font-size:.82rem;font-weight:900;margin-bottom:2px}
+@media (prefers-color-scheme: dark){.news-points li b{color:#7fd1cf}}
+.news-foot{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.news-source{color:var(--muted);font-size:.88rem}
+.news-source b{color:var(--ink)}
+@media(max-width:760px){.news-points{grid-template-columns:1fr}.news-body{padding:22px 20px}}
+
 /* ---------- Sections ---------- */
 section{padding:52px 0 8px}
 .sec-head{max-width:44rem;margin-bottom:26px}
@@ -226,6 +246,7 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
       <span>کافی‌نت بلاکچین<small>لنگرود · خدمات اینترنتی و مالی</small></span>
     </a>
     <nav class="nav-links" aria-label="بخش‌های سایت">
+      <a href="#news">اخبار</a>
       <a href="#services">خدمات</a>
       <a href="#invest">مشاوره سرمایه‌گذاری</a>
       <a href="#why">چرا ما؟</a>
@@ -280,6 +301,35 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
       </div>
     </div>
   </div>
+
+  <!-- News -->
+  <section id="news" class="news-wrap" style="padding-bottom:0">
+    <div class="wrap">
+      <article class="news-card" aria-labelledby="news-title">
+        <div class="news-stripe" aria-hidden="true"></div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span class="news-badge">خبر تازه · کنکور سراسری</span>
+            <span class="news-date">۱۸ آبان ۱۴۰۵</span>
+          </div>
+          <h2 id="news-title">نتایج نهایی کنکور سراسری در روزهای آینده اعلام می‌شود</h2>
+          <p class="news-lead">وزیر علوم اعلام کرد نتایج نهایی کنکور سراسری به‌زودی منتشر می‌شود و ترم نودانشجویان از اول آذر آغاز خواهد شد. برای مشاهده نتیجه، انتخاب واحد و کارهای ثبت‌نام دانشگاه می‌توانید روی کافی‌نت بلاکچین حساب کنید.</p>
+          <ul class="news-points">
+            <li><b>نتایج نهایی کنکور</b>در روزهای آینده اعلام می‌شود؛ داوطلبان آماده مشاهده نتیجه باشند.</li>
+            <li><b>شروع کلاس‌های نودانشجویان</b>کلاس‌های ورودی‌های جدید از اول آذر آغاز می‌شود.</li>
+            <li><b>برگزاری فشرده + کلاس جبرانی</b>کلاس‌ها به‌صورت فشرده برگزار می‌شود و کلاس فوق‌العاده برای جبران در نظر گرفته شده است.</li>
+          </ul>
+          <div class="news-foot">
+            <p class="news-source">منبع: <b>وزیر علوم، حسین سیمایی صراف</b> — ۱۸ آبان ۱۴۰۵</p>
+            <a class="btn btn-call" href="tel:+989111433254" style="min-height:42px;padding:8px 18px;font-size:.9rem">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+              برای مشاهده نتیجه و ثبت‌نام، تماس بگیرید
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
 
   <!-- Services -->
   <section id="services">
