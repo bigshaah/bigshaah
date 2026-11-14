@@ -335,6 +335,8 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
 .rate-note{color:var(--muted);font-size:.85rem;margin-top:2px}
 .rates-search{margin:20px 0 4px}
 .rates-search input{width:340px;max-width:100%}
+.rate-link{color:inherit;text-decoration:none}
+.rate-link:hover{color:var(--gold);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -869,7 +871,7 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
       <div class="no-result" id="noResult">خدمتی با این نام پیدا نشد. برای کاری که مدنظرت است تماس بگیر؛ احتمالاً انجامش می‌دهیم: <a href="tel:+989111433254" dir="ltr" style="font-weight:900">0911 143 3254</a></div>
       <div class="rates-block" id="rates">
         <h2>نرخ خدمات</h2>
-        <p>نرخ خدمات کافی‌نت بلاکچین — سال ۱۴۰۵. همه مبالغ به <b>ریال</b> است. پرداخت‌های داخل سامانه‌ها جداگانه محاسبه می‌شود.</p>
+        <p>نرخ خدمات کافی‌نت بلاکچین — سال ۱۴۰۵. همه مبالغ به <b>ریال</b> است. پرداخت‌های داخل سامانه‌ها جداگانه محاسبه می‌شود. روی نام هر خدمت کلیک کن تا درخواستت با نام و آیدی تلگرامت به ربات کافی‌نت برسه.</p>
         <div class="search-box rates-search">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
           <input id="ratesSearch" type="search" placeholder="جست‌وجوی نرخ… مثلاً ثنا یا پرینت" aria-label="جست‌وجوی نرخ خدمات" />
@@ -878,282 +880,283 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>هزینه استفاده از اینترنت به غیر از حجم دانلود — یک ربع</td><td class="rate-price">۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>هزینه استفاده از اینترنت به غیر از حجم دانلود — نیم ساعت</td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>هزینه استفاده از اینترنت به غیر از حجم دانلود — یک ساعت</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_1">هزینه استفاده از اینترنت به غیر از حجم دانلود — یک ربع</a></td><td class="rate-price">۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_2">هزینه استفاده از اینترنت به غیر از حجم دانلود — نیم ساعت</a></td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_3">هزینه استفاده از اینترنت به غیر از حجم دانلود — یک ساعت</a></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">ثبت نام اینترنتی</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>ثبت نام اینترنتی برای تمام صفحات به ازای هر مراجعه‌کننده<div class="rate-note">تا ۱۰ دقیقه، بعد از ۱۰ دقیقه به ازای هر ۱۰ دقیقه ۶۵۰٬۰۰۰ ریال؛ بدون احتساب هزینه اسکن و پرینت</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_4">ثبت نام اینترنتی برای تمام صفحات به ازای هر مراجعه‌کننده</a><div class="rate-note">تا ۱۰ دقیقه، بعد از ۱۰ دقیقه به ازای هر ۱۰ دقیقه ۶۵۰٬۰۰۰ ریال؛ بدون احتساب هزینه اسکن و پرینت</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">امور قضایی</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>دریافت ابلاغیه قضایی<div class="rate-note">همراه با پرینت</div></td><td class="rate-price">۵۵۰٬۰۰۰ ریال</td></tr>
-            <tr><td>نوبت‌دهی قضایی<div class="rate-note">در صورت ناموفق بودن بابت ورود به سامانه ۵۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>بازیابی رمز شخصی بطور کامل</td><td class="rate-price">۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت عدم سوء پیشینه<div class="rate-note">۵۰۰٬۰۰۰ ریال هزینه پاسخ استعلام مطابق با دریافت ابلاغ (متن در سند ناقص است)</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت ثنا و احراز هویت<div class="rate-note">بدون احتساب پرداخت در سامانه</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرداخت هزینه‌های آنلاین<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پیگیری پرونده قضایی به صورت آنلاین</td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_5">دریافت ابلاغیه قضایی</a><div class="rate-note">همراه با پرینت</div></td><td class="rate-price">۵۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_6">نوبت‌دهی قضایی</a><div class="rate-note">در صورت ناموفق بودن بابت ورود به سامانه ۵۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_7">بازیابی رمز شخصی بطور کامل</a></td><td class="rate-price">۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_8">ثبت عدم سوء پیشینه</a><div class="rate-note">۵۰۰٬۰۰۰ ریال هزینه پاسخ استعلام مطابق با دریافت ابلاغ (متن در سند ناقص است)</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_9">ثبت ثنا و احراز هویت</a><div class="rate-note">بدون احتساب پرداخت در سامانه</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_10">پرداخت هزینه‌های آنلاین</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_11">پیگیری پرونده قضایی به صورت آنلاین</a></td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">امور بیمه</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>ثبت نام در سامانه تامین اجتماعی</td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>گواهی حقوق و صدور گواهی کسر از حقوق<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>انعقاد قرارداد بیمه تامین اجتماعی و سایر خدمات درون سایتی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>دریافت سوابق تامین اجتماعی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>دریافت فیش حقوق – حکم بازنشستگی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت درخواست در سامانه جامع روابط کار بیمه بیکاری<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>احراز هویت سامانه جامع کار<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>نام‌نویسی نیروی کار در کارگاه در صورت ثبت اولیه و بارگذاری مدارک<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال لیست بیمه کارکنان تا سه نفر در کارگاه<div class="rate-note">بدون احتساب پرینت؛ به ازای هر نفر اضافه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرداخت حق بیمه آنلاین لیست بیمه<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت و پرداخت حق بیمه آنلاین و بیمه‌های اختیاری<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اعتراض به بدهی‌های کارگاهی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست بازرسی مجدد یا درخواست بازرسی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>هزینه ثبت بازرسی دفاتر قانونی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۵٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت درخواست بازنشستگی در سامانه تامین اجتماعی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت هدیه ازدواج – کمک هزینه مراسم ترحیم<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت برقراری مستمری بازنشستگی<div class="rate-note">بدون احتساب ۸۰۰٬۰۰۰ ریال، مراحل بعدی و پیگیری هر نوبت پرینت و اسکن</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت تعهدنامه بازمانده دختر در کارتابل تامین اجتماعی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>نامه کسر از اقساط بازنشستگان کشوری<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>افزودن افراد تبعی در پروفایل تامین به ازای هر نفر<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت کمیسیون پزشکی جهت بازنشستگی (شروع اولیه جهت ثبت و پرینت)<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>کمک هزینه عینک / سمعک<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_12">ثبت نام در سامانه تامین اجتماعی</a></td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_13">گواهی حقوق و صدور گواهی کسر از حقوق</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_14">انعقاد قرارداد بیمه تامین اجتماعی و سایر خدمات درون سایتی</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_15">دریافت سوابق تامین اجتماعی</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_16">دریافت فیش حقوق – حکم بازنشستگی</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_17">ثبت درخواست در سامانه جامع روابط کار بیمه بیکاری</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_18">احراز هویت سامانه جامع کار</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_19">نام‌نویسی نیروی کار در کارگاه در صورت ثبت اولیه و بارگذاری مدارک</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_20">ارسال لیست بیمه کارکنان تا سه نفر در کارگاه</a><div class="rate-note">بدون احتساب پرینت؛ به ازای هر نفر اضافه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_21">پرداخت حق بیمه آنلاین لیست بیمه</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_22">ثبت و پرداخت حق بیمه آنلاین و بیمه‌های اختیاری</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_23">اعتراض به بدهی‌های کارگاهی</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_24">درخواست بازرسی مجدد یا درخواست بازرسی</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_25">هزینه ثبت بازرسی دفاتر قانونی</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۵٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_26">ثبت درخواست بازنشستگی در سامانه تامین اجتماعی</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_27">ثبت هدیه ازدواج – کمک هزینه مراسم ترحیم</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_28">ثبت برقراری مستمری بازنشستگی</a><div class="rate-note">بدون احتساب ۸۰۰٬۰۰۰ ریال، مراحل بعدی و پیگیری هر نوبت پرینت و اسکن</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_29">ثبت تعهدنامه بازمانده دختر در کارتابل تامین اجتماعی</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_30">نامه کسر از اقساط بازنشستگان کشوری</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_31">افزودن افراد تبعی در پروفایل تامین به ازای هر نفر</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_32">ثبت کمیسیون پزشکی جهت بازنشستگی (شروع اولیه جهت ثبت و پرینت)</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_33">کمک هزینه عینک / سمعک</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">پرینت – اسکن – تایپ – ایمیل</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>پرینت لیزری سیاه و سفید هر برگ A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۵۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرینت لیزری سیاه و سفید ۲ رو هر برگ A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۹۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرینت لیزری سیاه و سفید هر برگ A5<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرینت لیزری سیاه و سفید هر برگ A3<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۲۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرینت رنگی بصورت متن در یک صفحه A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۲۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرینت رنگی بصورت عکس در یک صفحه A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۳۴۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرینت رنگی بصورت عکس در صفحه A5<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اسکن سیاه و سفید یا رنگی تا سایز A4 هر برگ<div class="rate-note">بدون برش و تنظیمات سایز A4 هر برگ ۲۸۰٬۰۰۰ ریال</div></td><td class="rate-price">۲۴۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال و یا دریافت فکس هر برگ داخل کشور<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال و یا دریافت فکس هر برگ خارج کشور<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۴۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تایپ ساده فوری حداقل هر برگ ۱۸ سطر فونت ۱۶</td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تایپ تیتر مشکی A4 همراه با یک برگ پرینت<div class="rate-note">رنگی ۷۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۴۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ایجاد ایمیل توسط اپراتور واحد صنفی<div class="rate-note">بدون نصب و راه‌اندازی دستگاه</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال و دریافت ایمیل توسط اپراتور واحد صنفی<div class="rate-note">بدون احتساب آپلود و دانلود فایل</div></td><td class="rate-price">۵۶۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ایجاد هر صفحه در پاورپوینت<div class="rate-note">ساده بدون محتواسازی</div></td><td class="rate-price">۴۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_34">پرینت لیزری سیاه و سفید هر برگ A4</a><div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_35">پرینت لیزری سیاه و سفید ۲ رو هر برگ A4</a><div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۹۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_36">پرینت لیزری سیاه و سفید هر برگ A5</a><div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_37">پرینت لیزری سیاه و سفید هر برگ A3</a><div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۲۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_38">پرینت رنگی بصورت متن در یک صفحه A4</a><div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۲۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_39">پرینت رنگی بصورت عکس در یک صفحه A4</a><div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۳۴۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_40">پرینت رنگی بصورت عکس در صفحه A5</a><div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_41">اسکن سیاه و سفید یا رنگی تا سایز A4 هر برگ</a><div class="rate-note">بدون برش و تنظیمات سایز A4 هر برگ ۲۸۰٬۰۰۰ ریال</div></td><td class="rate-price">۲۴۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_42">ارسال و یا دریافت فکس هر برگ داخل کشور</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_43">ارسال و یا دریافت فکس هر برگ خارج کشور</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۴۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_44">تایپ ساده فوری حداقل هر برگ ۱۸ سطر فونت ۱۶</a></td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_45">تایپ تیتر مشکی A4 همراه با یک برگ پرینت</a><div class="rate-note">رنگی ۷۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۴۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_46">ایجاد ایمیل توسط اپراتور واحد صنفی</a><div class="rate-note">بدون نصب و راه‌اندازی دستگاه</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_47">ارسال و دریافت ایمیل توسط اپراتور واحد صنفی</a><div class="rate-note">بدون احتساب آپلود و دانلود فایل</div></td><td class="rate-price">۵۶۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_48">ایجاد هر صفحه در پاورپوینت</a><div class="rate-note">ساده بدون محتواسازی</div></td><td class="rate-price">۴۵۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">ثبت نام های تخصصی</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>ثبت نام در سامانه میخک (وزارت امور خارجه)</td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت درخواست‌ها در سامانه میخک</td><td class="rate-price">۳٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام پذیرش دانشگاه‌های آزاد<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۴٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام پذیرش دانشگاه پیام نور<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۴٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام پذیرش غیر حضوری دانشگاه‌های دولتی<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۸٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام دانشگاه آزاد و سراسری بر اساس سوابق تحصیلی<div class="rate-note">با احتساب خرید کارت و پرینت؛ خرید هر کارت اضافی ۶۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>انتخاب رشته کنکور سراسری و آزاد با احتساب پرینت تا ۴۰ کد<div class="rate-note">هر کد اضافی مبلغ ۸۰٬۰۰۰ ریال اضافه می‌شود</div></td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ویرایش کد انتخاب رشته دانشگاه آزاد و سراسری</td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام اولیه سامانه سخا<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>احراز نشانی پست<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت هر خدمت سخا<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سامانه GICA<div class="rate-note">بدون اسکن و پرینت و پرداخت با کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام اولیه ستاد ایران<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۶٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت مزایده<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۶٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت مناقصه<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱۲٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت خرید<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام پلمب دفاتر قانونی<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت با کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>امضا با توکن در سایت ثبت من<div class="rate-note">هر امضا اضافی ۱٬۷۰۰٬۰۰۰ ریال؛ بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>امضا با پلتفرم‌های نرم‌افزاری<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۸٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>راه‌اندازی توکن<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۸٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست انحصار وراثت<div class="rate-note">احراز هویت هدی و دریافت ابلاغ ۳٬۷۵۰٬۰۰۰ ریال؛ بدون احتساب پرداخت و پرینت</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام فیدا اتباع با پرداخت<div class="rate-note">بدون احتساب مبلغ پرداخت به سایت</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_49">ثبت نام در سامانه میخک (وزارت امور خارجه)</a></td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_50">ثبت درخواست‌ها در سامانه میخک</a></td><td class="rate-price">۳٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_51">ثبت نام پذیرش دانشگاه‌های آزاد</a><div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۴٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_52">ثبت نام پذیرش دانشگاه پیام نور</a><div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۴٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_53">ثبت نام پذیرش غیر حضوری دانشگاه‌های دولتی</a><div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۸٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_54">ثبت نام دانشگاه آزاد و سراسری بر اساس سوابق تحصیلی</a><div class="rate-note">با احتساب خرید کارت و پرینت؛ خرید هر کارت اضافی ۶۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_55">انتخاب رشته کنکور سراسری و آزاد با احتساب پرینت تا ۴۰ کد</a><div class="rate-note">هر کد اضافی مبلغ ۸۰٬۰۰۰ ریال اضافه می‌شود</div></td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_56">ویرایش کد انتخاب رشته دانشگاه آزاد و سراسری</a></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_57">ثبت نام اولیه سامانه سخا</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_58">احراز نشانی پست</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_59">ثبت هر خدمت سخا</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_60">ثبت نام سامانه GICA</a><div class="rate-note">بدون اسکن و پرینت و پرداخت با کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_61">ثبت نام اولیه ستاد ایران</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۶٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_62">ثبت مزایده</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۶٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_63">ثبت مناقصه</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_64">ثبت خرید</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_65">ثبت نام پلمب دفاتر قانونی</a><div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت با کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_66">امضا با توکن در سایت ثبت من</a><div class="rate-note">هر امضا اضافی ۱٬۷۰۰٬۰۰۰ ریال؛ بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_67">امضا با پلتفرم‌های نرم‌افزاری</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۸٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_68">راه‌اندازی توکن</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۸٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_69">درخواست انحصار وراثت</a><div class="rate-note">احراز هویت هدی و دریافت ابلاغ ۳٬۷۵۰٬۰۰۰ ریال؛ بدون احتساب پرداخت و پرینت</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_70">ثبت نام فیدا اتباع با پرداخت</a><div class="rate-note">بدون احتساب مبلغ پرداخت به سایت</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">ثبت نام های عمومی</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>ثبت نام وام ازدواج به ازای هر نفر</td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام اولیه ایران خودرو و سایپا و سامانه یکپارچه<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>انتخاب خودرو ایران خودرو و سایپا و سامانه یکپارچه<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام و پرداخت مالیات نقل و انتقال خودرو<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرداخت خلافی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۹۵۰٬۰۰۰ ریال</td></tr>
-            <tr><td>احراز نشانی پست<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>نوبت‌دهی تعویض پلاک<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تاییدیه تحصیلی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تاییدیه پستی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام مسکن ملی<div class="rate-note">به ازای هر فرد زیر مجموعه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام وام ودیعه مسکن<div class="rate-note">به ازای هر فرد زیر مجموعه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سامانه اسکان و املاک<div class="rate-note">به ازای هر ملک اضافه ۱٬۶۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>سامانه خودنویس — فقط تایپ و انجام امور اینترنتی قرارداد مالک و مستاجر (حضور مالک و مستاجر الزامی است و ثبت قرارداد به درخواست مشتری می‌باشد)<div class="rate-note">ثبت آدرس سکونت در سامانه املاک و اسکان برای طرفین بصورت جداگانه طبق ردیف ۸۸ محاسبه می‌گردد؛ هر شریک اضافه ۳٬۲۰۰٬۰۰۰ ریال؛ هر طرف حقوقی مبلغ ۴٬۰۰۰٬۰۰۰ ریال اضافه می‌گردد؛ بدون احتساب پرینت</div></td><td class="rate-price">۱۶٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سند ملکی در سایت (sabtemelk.ssaa.ir)<div class="rate-note">بدون احتساب هزینه اسکن، پرینت و پرداخت</div></td><td class="rate-price">۹٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سجام به همراه پرداخت<div class="rate-note">بدون احراز هویت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام تهران من خودرو<div class="rate-note">بدون اسکن مدارک</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام یارانه سوخت وانت بار (پروانه فعالیت – پروانه اشتغال)<div class="rate-note">بدون احتساب اسکن و پرینت</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>بازیابی نام کاربری و رمز عبور</td><td class="rate-price">۵۵۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام کتب درسی<div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۱٬۱۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام مدارس نمونه دولتی – استعدادهای درخشان<div class="rate-note">بدون احتساب پرینت؛ پرداخت از کارت مشتری</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام کارت ملی هوشمند<div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>خرید و پرداخت اینترنتی<div class="rate-note">با کارت مشتری؛ بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>حق‌الزحمه اپراتور و هزینه اینترنت جهت دریافت فیش و حکم حقوقی، کارت ورود به جلسه، استعلام سهام عدالت، دریافت قبوض آب و برق و تلفن و ...<div class="rate-note">بدون پرینت</div></td><td class="rate-price">۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>هزینه هر گونه استعلام خبری از اینترنت که ساده و بدون پرینت باشد</td><td class="rate-price">۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استخراج مطلب از طریق اینترنت توسط اپراتور<div class="rate-note">تا ۱۰ دقیقه؛ بعد از ۱۰ دقیقه به ازای هر ۵ دقیقه ۸۰۰٬۰۰۰ ریال؛ بدون احتساب هزینه اسکن و پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>دریافت فایل مجاز از شبکه‌های اجتماعی به ازای هر فایل<div class="rate-note">برای ۱ فایل؛ به ازای هر فایل اضافه ۸۰٬۰۰۰ ریال؛ بدون احتساب پرینت</div></td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
-            <tr><td>رایت CD<div class="rate-note">بدون احتساب CD خام</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>رایت DVD<div class="rate-note">بدون احتساب DVD خام</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام کارت منزلت<div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام وام بازنشستگان<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت اعتراض یارانه<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام بیمه ورزشی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>سامانه ثبت من به ازای هر خدمت<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_71">ثبت نام وام ازدواج به ازای هر نفر</a></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_72">ثبت نام اولیه ایران خودرو و سایپا و سامانه یکپارچه</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_73">انتخاب خودرو ایران خودرو و سایپا و سامانه یکپارچه</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_74">ثبت نام و پرداخت مالیات نقل و انتقال خودرو</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_75">پرداخت خلافی</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۹۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_76">احراز نشانی پست</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_77">نوبت‌دهی تعویض پلاک</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_78">تاییدیه تحصیلی</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_79">تاییدیه پستی</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_80">ثبت نام مسکن ملی</a><div class="rate-note">به ازای هر فرد زیر مجموعه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_81">ثبت نام وام ودیعه مسکن</a><div class="rate-note">به ازای هر فرد زیر مجموعه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_82">ثبت نام سامانه اسکان و املاک</a><div class="rate-note">به ازای هر ملک اضافه ۱٬۶۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_83">سامانه خودنویس — فقط تایپ و انجام امور اینترنتی قرارداد مالک و مستاجر (حضور مالک و مستاجر الزامی است و ثبت قرارداد به درخواست مشتری می‌باشد)</a><div class="rate-note">ثبت آدرس سکونت در سامانه املاک و اسکان برای طرفین بصورت جداگانه طبق ردیف ۸۸ محاسبه می‌گردد؛ هر شریک اضافه ۳٬۲۰۰٬۰۰۰ ریال؛ هر طرف حقوقی مبلغ ۴٬۰۰۰٬۰۰۰ ریال اضافه می‌گردد؛ بدون احتساب پرینت</div></td><td class="rate-price">۱۶٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_84">ثبت نام سند ملکی در سایت (sabtemelk.ssaa.ir)</a><div class="rate-note">بدون احتساب هزینه اسکن، پرینت و پرداخت</div></td><td class="rate-price">۹٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_85">ثبت نام سجام به همراه پرداخت</a><div class="rate-note">بدون احراز هویت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_86">ثبت نام تهران من خودرو</a><div class="rate-note">بدون اسکن مدارک</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_87">ثبت نام یارانه سوخت وانت بار (پروانه فعالیت – پروانه اشتغال)</a><div class="rate-note">بدون احتساب اسکن و پرینت</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_88">بازیابی نام کاربری و رمز عبور</a></td><td class="rate-price">۵۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_89">ثبت نام کتب درسی</a><div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۱٬۱۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_90">ثبت نام مدارس نمونه دولتی – استعدادهای درخشان</a><div class="rate-note">بدون احتساب پرینت؛ پرداخت از کارت مشتری</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_91">ثبت نام کارت ملی هوشمند</a><div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_92">خرید و پرداخت اینترنتی</a><div class="rate-note">با کارت مشتری؛ بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_93">حق‌الزحمه اپراتور و هزینه اینترنت جهت دریافت فیش و حکم حقوقی، کارت ورود به جلسه، استعلام سهام عدالت، دریافت قبوض آب و برق و تلفن و ...</a><div class="rate-note">بدون پرینت</div></td><td class="rate-price">۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_94">هزینه هر گونه استعلام خبری از اینترنت که ساده و بدون پرینت باشد</a></td><td class="rate-price">۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_95">استخراج مطلب از طریق اینترنت توسط اپراتور</a><div class="rate-note">تا ۱۰ دقیقه؛ بعد از ۱۰ دقیقه به ازای هر ۵ دقیقه ۸۰۰٬۰۰۰ ریال؛ بدون احتساب هزینه اسکن و پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_96">دریافت فایل مجاز از شبکه‌های اجتماعی به ازای هر فایل</a><div class="rate-note">برای ۱ فایل؛ به ازای هر فایل اضافه ۸۰٬۰۰۰ ریال؛ بدون احتساب پرینت</div></td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_97">رایت CD</a><div class="rate-note">بدون احتساب CD خام</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_98">رایت DVD</a><div class="rate-note">بدون احتساب DVD خام</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_99">ثبت نام کارت منزلت</a><div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_100">ثبت نام وام بازنشستگان</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_101">ثبت اعتراض یارانه</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_102">ثبت نام بیمه ورزشی</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_103">سامانه ثبت من به ازای هر خدمت</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">خدمات مالیات</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>ثبت نام درگاه ملی سازمان امور مالیاتی</td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>فراموشی رمز سامانه مالیاتی</td><td class="rate-price">۴۷۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت اعتراض مالیاتی در سامانه my.tax</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اظهارنامه گروه ۲<div class="rate-note">ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۱۱٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اظهارنامه عادی ماده ۹۵<div class="rate-note">محاسبات توسط مودی یا حسابدار مربوطه؛ ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۸٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اظهارنامه تبصره ۱۰۰ بدون عملکرد (صفر)<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اظهارنامه تبصره ۱۰۰<div class="rate-note">ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۵٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_104">ثبت نام درگاه ملی سازمان امور مالیاتی</a></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_105">فراموشی رمز سامانه مالیاتی</a></td><td class="rate-price">۴۷۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_106">ثبت اعتراض مالیاتی در سامانه my.tax</a></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_107">اظهارنامه گروه ۲</a><div class="rate-note">ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۱۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_108">اظهارنامه عادی ماده ۹۵</a><div class="rate-note">محاسبات توسط مودی یا حسابدار مربوطه؛ ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۸٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_109">اظهارنامه تبصره ۱۰۰ بدون عملکرد (صفر)</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_110">اظهارنامه تبصره ۱۰۰</a><div class="rate-note">ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۵٬۷۰۰٬۰۰۰ ریال</td></tr>
             <tr><td>هر شریک در اظهارنامه<div class="rate-note">مبلغ در توضیحات اظهارنامه مشخص است</div></td><td class="rate-price">—</td></tr>
-            <tr><td>اظهارنامه مستغلات به ازای هر مالک<div class="rate-note">به ازای یک ملک و یک مستاجر؛ ملک اضافی ۳٬۰۰۰٬۰۰۰ ریال؛ هر مستاجر اضافی ۱٬۱۰۰٬۰۰۰ ریال اضافه خواهد شد؛ بدون احتساب پرینت</div></td><td class="rate-price">۶٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اظهارنامه حقوقی غیر فعال (عملکرد صفر)</td><td class="rate-price">۶٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>صدور فیش اظهارنامه<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۳۵۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اظهارنامه ارث تا ۳ مورد ماترک<div class="rate-note">به ازای هر ماترک اضافه ۹۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_112">اظهارنامه مستغلات به ازای هر مالک</a><div class="rate-note">به ازای یک ملک و یک مستاجر؛ ملک اضافی ۳٬۰۰۰٬۰۰۰ ریال؛ هر مستاجر اضافی ۱٬۱۰۰٬۰۰۰ ریال اضافه خواهد شد؛ بدون احتساب پرینت</div></td><td class="rate-price">۶٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_113">اظهارنامه حقوقی غیر فعال (عملکرد صفر)</a></td><td class="rate-price">۶٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_114">صدور فیش اظهارنامه</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۳۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_115">اظهارنامه ارث تا ۳ مورد ماترک</a><div class="rate-note">به ازای هر ماترک اضافه ۹۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
             <tr><td>اظهارنامه اصلاحی تنظیم‌شده توسط واحد صنفی</td><td class="rate-price">۵۰ درصد نرخ</td></tr>
-            <tr><td>پرداخت قبض مالیات<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام کد اقتصادی بصورت کامل<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۵٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>افزودن هر شریک در ثبت نام<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ویرایش پیش ثبت نام کد اقتصادی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سامانه مودیان و دریافت کد یکتا بطور کامل<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱۰٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال اظهارنامه ارزش افزوده<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال لیست معاملات فصلی با یک رکورد – خرید یا فروش<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت رکورد معاملات فصلی به ازای هر خرید و یا فروش مازاد<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال لیست مالیات حقوق کارکنان تا ۴ نفر<div class="rate-note">به ازای هر پرسنل اضافه ۸۰۰٬۰۰۰ ریال؛ بدون احتساب پرینت</div></td><td class="rate-price">۳٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>افزودن هر پرسنل جدید به لیست مالیات حقوق</td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام و پرداخت مالیات خودرو و خانه‌های لوکس<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اعتراض به مالیات بر خودرو و خانه لوکس، خانه‌های خالی همراه با درج متن اعتراض<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ابلاغیه‌های مالیاتی به ازای هر ابلاغ<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اظهارنامه مشاغل خودرویی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ورود به سامانه واکنش مالیاتی تا ۵ مورد<div class="rate-note">به ازای هر آیتم اضافی ۲۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_117">پرداخت قبض مالیات</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_118">ثبت نام کد اقتصادی بصورت کامل</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۵٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_119">افزودن هر شریک در ثبت نام</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_120">ویرایش پیش ثبت نام کد اقتصادی</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_121">ثبت نام سامانه مودیان و دریافت کد یکتا بطور کامل</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱۰٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_122">ارسال اظهارنامه ارزش افزوده</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_123">ارسال لیست معاملات فصلی با یک رکورد – خرید یا فروش</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_124">ثبت رکورد معاملات فصلی به ازای هر خرید و یا فروش مازاد</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_125">ارسال لیست مالیات حقوق کارکنان تا ۴ نفر</a><div class="rate-note">به ازای هر پرسنل اضافه ۸۰۰٬۰۰۰ ریال؛ بدون احتساب پرینت</div></td><td class="rate-price">۳٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_126">افزودن هر پرسنل جدید به لیست مالیات حقوق</a></td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_127">ثبت نام و پرداخت مالیات خودرو و خانه‌های لوکس</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_128">اعتراض به مالیات بر خودرو و خانه لوکس، خانه‌های خالی همراه با درج متن اعتراض</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_129">ابلاغیه‌های مالیاتی به ازای هر ابلاغ</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_130">اظهارنامه مشاغل خودرویی</a><div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_131">ورود به سامانه واکنش مالیاتی تا ۵ مورد</a><div class="rate-note">به ازای هر آیتم اضافی ۲۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">خدمات بانکی</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>ثبت نام سامانه بام</td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام حساب ارزی</td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>افتتاح حساب و احراز هویت بانک‌ها</td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت چک صیادی با پرینت</td><td class="rate-price">۱٬۱۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تایید چک صیادی با پرینت</td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سامانه شمس</td><td class="rate-price">۷٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>خرید و پرداخت اینترنتی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>افتتاح حساب و اعتبار سنجی مرآت رسالت</td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>سفته الکترونیکی</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ضمانت سفته الکترونیکی</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_132">ثبت نام سامانه بام</a></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_133">ثبت نام حساب ارزی</a></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_134">افتتاح حساب و احراز هویت بانک‌ها</a></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_135">ثبت چک صیادی با پرینت</a></td><td class="rate-price">۱٬۱۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_136">تایید چک صیادی با پرینت</a></td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_137">ثبت نام سامانه شمس</a></td><td class="rate-price">۷٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_138">خرید و پرداخت اینترنتی</a><div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_139">افتتاح حساب و اعتبار سنجی مرآت رسالت</a></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_140">سفته الکترونیکی</a></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_141">ضمانت سفته الکترونیکی</a></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">خدمات مجوز فعالیت و پروانه کسب</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>ورود به سامانه ملی مجوزها و ثبت نام اولیه</td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست احراز نشانی</td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استعلام گواهی ۱۸۶ مالیاتی و کارت پایان خدمت و ایثارگری و محکومیت (هر کدام)</td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست بازدید اماکن در پلیس من<div class="rate-note">ثبت اعتراض ۱٬۴۲۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>نوین اصناف و ثبت نام مراحل اشخاص حقیقی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>به ازای هر شریک و مباشر</td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>نوین اصناف و ثبت نام مراحل اشخاص حقوقی</td><td class="rate-price">۷٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرداخت الکترونیکی مبلغ صدور جواز از کارت مشتری (هر پرداخت)</td><td class="rate-price">۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام کلاس آموزش اصناف<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام صلاحیت بهداشتی در سامانه سامح</td><td class="rate-price">۵٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تکمیل اطلاعات سامانه جامع آموزش مداوم پزشکی</td><td class="rate-price">۵٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>سامانه پاتمک</td><td class="rate-price">۶٬۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>سامانه سپامک</td><td class="rate-price">۹٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>عضویت نظام مهندسی</td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>دریافت شناسه یکتا برای مجوزهای قدیمی</td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>دریافت کد نقش</td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>کارت سوخت</td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت تغییرات (تغییر آدرس، تغییر رسته و ...) در سامانه مجوزها و نوین اصناف</td><td class="rate-price">۴٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت مجوز مشاغل خانگی</td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت آدرس در سامانه ncr (ثبت حوال)</td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سامانه سپتام<div class="rate-note">هزینه اسکن و پرداخت مجزا</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت درخواست مجوز ماه رمضان در پلیس اماکن<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_142">ورود به سامانه ملی مجوزها و ثبت نام اولیه</a></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_143">درخواست احراز نشانی</a></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_144">استعلام گواهی ۱۸۶ مالیاتی و کارت پایان خدمت و ایثارگری و محکومیت (هر کدام)</a></td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_145">درخواست بازدید اماکن در پلیس من</a><div class="rate-note">ثبت اعتراض ۱٬۴۲۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_146">نوین اصناف و ثبت نام مراحل اشخاص حقیقی</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_147">به ازای هر شریک و مباشر</a></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_148">نوین اصناف و ثبت نام مراحل اشخاص حقوقی</a></td><td class="rate-price">۷٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_149">پرداخت الکترونیکی مبلغ صدور جواز از کارت مشتری (هر پرداخت)</a></td><td class="rate-price">۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_150">ثبت نام کلاس آموزش اصناف</a><div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_151">ثبت نام صلاحیت بهداشتی در سامانه سامح</a></td><td class="rate-price">۵٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_152">تکمیل اطلاعات سامانه جامع آموزش مداوم پزشکی</a></td><td class="rate-price">۵٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_153">سامانه پاتمک</a></td><td class="rate-price">۶٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_154">سامانه سپامک</a></td><td class="rate-price">۹٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_155">عضویت نظام مهندسی</a></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_156">دریافت شناسه یکتا برای مجوزهای قدیمی</a></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_157">دریافت کد نقش</a></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_158">کارت سوخت</a></td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_159">ثبت تغییرات (تغییر آدرس، تغییر رسته و ...) در سامانه مجوزها و نوین اصناف</a></td><td class="rate-price">۴٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_160">ثبت مجوز مشاغل خانگی</a></td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_161">ثبت آدرس در سامانه ncr (ثبت حوال)</a></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_162">ثبت نام سامانه سپتام</a><div class="rate-note">هزینه اسکن و پرداخت مجزا</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_163">ثبت درخواست مجوز ماه رمضان در پلیس اماکن</a><div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <h3 class="rates-group">سایر خدمات</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
           <tbody>
-            <tr><td>استعلامات سایت پلیس من</td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>خرید بلیط هواپیما (به ازای هر نفر) به طور کامل<div class="rate-note">مبلغ پرداخت از کارت مشتری</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>خرید بلیط قطار و اتوبوس (به ازای هر نفر) به طور کامل<div class="rate-note">مبلغ پرداخت از کارت مشتری</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تحقیق ساده دانش‌آموزی به ازای هر برگ</td><td class="rate-price">۳۷۰٬۰۰۰ ریال</td></tr>
-            <tr><td>جستجو مطالب لاتین توسط اپراتور واحد صنفی<div class="rate-note">هر مطلب جداگانه محاسبه می‌شود</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام در سامانه فنی حرفه‌ای مانند کارگران ساختمانی، قالیبافان و ...<div class="rate-note">اسکن و پرینت مجزا و پرداخت از کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>انتخاب واحد دانشگاه آزاد، ورود و اخذ تا یک درس و ثبت درخواست مجوز انتخاب واحد (بدون تعیین وقت توسط مشتری)<div class="rate-note">هر انتخاب اضافه ۲۴۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>انتخاب واحد دانشگاه‌های پیام نور و سراسری و علمی کاربردی<div class="rate-note">هزینه پرینت و پرداخت مجزا؛ هر درس اضافه ۱۶۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>جستجوی هر کد ثبت‌نامی در دفترچه‌های آزمون‌ها و ثبت نام‌ها (دانشگاه‌ها و استخدامی‌ها و ...)</td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>            <tr><td>استعلام گواهینامه و تمدید مدارک فنی و حرفه‌ای<div class="rate-note">بهمراه کارمزد پرداخت</div></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام اولیه و تکمیل اطلاعات در سامانه سجاد (وزارت علوم)<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت هر درخواست در سامانه سجاد (وزارت علوم)<div class="rate-note">هزینه اسکن مجزا؛ بهمراه کارمزد پرداخت</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>سامانه نقل و انتقال دانشگاه آزاد (منادا)<div class="rate-note">هزینه اسکن مجزا؛ بهمراه کارمزد پرداخت</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام در سامانه تخصصی پزشکان</td><td class="rate-price">۵٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تمدید یا ثبت نام بیمه سلامت<div class="rate-note">به ازای پرداخت هر فرد ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام سهما انباع</td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرداخت قبوض با کارت عضو شتاب مشتری با ارائه رسید از دستگاه کارتخوان</td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام در سامانه همیاب ۲۴<div class="rate-note">پرداخت سامانه مجزا محاسبه می‌شود</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>جستجوی کدپستی موجود (در نقشه سایت اداره پست)<div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست صدور کد پستی جدید در سایت پست<div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>سنجش بدو ورود (ثبت فرزند، نوبت سنجش)<div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۵٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پیش ثبت نام مدارس در سایت my.medu.ir<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>هزینه دانلود به ازای هر گیگابایت</td><td class="rate-price">۷۴۰ ریال</td></tr>
-            <tr><td>هزینه آپلود فایل در صفحات وب به ازای هر مگابایت<div class="rate-note">کارمزد خدمات مجزا</div></td><td class="rate-price">۲۱٬۰۰۰ ریال</td></tr>
-            <tr><td>ارسال اظهارنامه مالیات بر مستغلات برای ۱ ملک و ۱ مالک و ۱ مستاجر<div class="rate-note">برای هر ملک مجزا و یا برای هر مستاجر اضافه ۱٬۳۰۰٬۰۰۰ ریال مجزا؛ املاک شراکتی که ۲ یا چندین مالک دارند، به ازای هر مالک یا شریک، هزینه متصدی طبق این بند مجزا و کامل دریافت می‌شود؛ پرینت و صدور فیش مالیاتی مجزا</div></td><td class="rate-price">۶٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام تسهیلات اقتصاد مقاومتی</td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام تسهیلات و اعطای زمین برای خانواده دارای فرزند سوم یا چهارم<div class="rate-note">به ازای ثبت مشخصات هر فرد تحت تکفل مبلغ ۵۰۰٬۰۰۰ ریال اضافه دریافت می‌گردد؛ بدون اسکن</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام وام فرزندآوری<div class="rate-note">هزینه پیگیری مجزا</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام تسهیلات اشتغال کشور</td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت هر درخواست در سامانه‌های اینترنت بانک</td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام وام بانک مسکن جدید خرید خانه با سند<div class="rate-note">هزینه پرداخت و پرینت و اسکن مجزا؛ بطور کامل</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام صندوق‌های مالی<div class="rate-note">هزینه اسکن و پرینت مجزا</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>احراز هویت سجام<div class="rate-note">پرداخت از کارت مشتری</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام در سامانه ذینفعان بازار سرمایه به همراه چاپ یک برگ سهام</td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>تعیین نمایندگی و پرداخت وجه خودرو (منتخبین سایپا، ایرانخودرو و ...)</td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرداخت هر کدام از بدهی‌های خودرو بصورت مجزا (عوارض آزاد راهی، خلافی)</td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استعلام و پرینت بیمه‌نامه خودرو</td><td class="rate-price">۹۶۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استعلام خلافی (از هر سامانه مانند آب، قبضینو و ...)</td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست خرید خدمت سربازی<div class="rate-note">پرداخت هر قسط بر حسب بند پرداخت حق بیمه</div></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست استفاده از خدمات غیر حضوری برای کارفرمایان</td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>دریافت ابلاغیه سازمان تامین اجتماعی<div class="rate-note">هر ابلاغ دیگر ۳۰۰٬۰۰۰ ریال؛ هزینه پرینت مجزا</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام اینترنتی در سایت‌های لاتین به ازای یک نفر<div class="rate-note">به ازای هر صفحه بیشتر و یا زیر مجموعه بیشتر ۱٬۰۰۰٬۰۰۰ ریال اضافه می‌گردد</div></td><td class="rate-price">۵٬۸۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استعلام بدهی کارگاه<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت درخواست قسط بدهی کارگاه<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>پرداخت بدهی‌های ابلاغ‌شده کارگاه<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>اعتراض به سابقه دارایی کسری کارکرد یا اشکال به ازای هر کارگاه</td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استعلام برخورداری از حمایت درمانی</td><td class="rate-price">۷۲۰٬۰۰۰ ریال</td></tr>
-            <tr><td>درخواست غرامت دستمزد بیماری<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت نام بیمه تکمیلی تأمین اجتماعی<div class="rate-note">ثبت هر نفر زیر مجموعه ۶۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت شماره حساب مستمری‌بگیران</td><td class="rate-price">۷۲۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت مشاغل سخت و زیان‌آور به ازای یک کارگاه<div class="rate-note">هر کارگاه ۱٬۱۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>ثبت قرارداد، ارسال لایحه، ثبت دادخواست، شکوائیه و ... برای وکلا</td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استعلام CMS و قراردادهای وکلا<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۳۰۰٬۰۰۰ ریال</td></tr>
-            <tr><td>استعلام ثبت نام ثنا با یک پرینت</td><td class="rate-price">۷۷۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_164">استعلامات سایت پلیس من</a></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_165">خرید بلیط هواپیما (به ازای هر نفر) به طور کامل</a><div class="rate-note">مبلغ پرداخت از کارت مشتری</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_166">خرید بلیط قطار و اتوبوس (به ازای هر نفر) به طور کامل</a><div class="rate-note">مبلغ پرداخت از کارت مشتری</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_167">تحقیق ساده دانش‌آموزی به ازای هر برگ</a></td><td class="rate-price">۳۷۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_168">جستجو مطالب لاتین توسط اپراتور واحد صنفی</a><div class="rate-note">هر مطلب جداگانه محاسبه می‌شود</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_169">ثبت نام در سامانه فنی حرفه‌ای مانند کارگران ساختمانی، قالیبافان و ...</a><div class="rate-note">اسکن و پرینت مجزا و پرداخت از کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_170">انتخاب واحد دانشگاه آزاد، ورود و اخذ تا یک درس و ثبت درخواست مجوز انتخاب واحد (بدون تعیین وقت توسط مشتری)</a><div class="rate-note">هر انتخاب اضافه ۲۴۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_171">انتخاب واحد دانشگاه‌های پیام نور و سراسری و علمی کاربردی</a><div class="rate-note">هزینه پرینت و پرداخت مجزا؛ هر درس اضافه ۱۶۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_172">جستجوی هر کد ثبت‌نامی در دفترچه‌های آزمون‌ها و ثبت نام‌ها (دانشگاه‌ها و استخدامی‌ها و ...)</a></td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_174">استعلام گواهینامه و تمدید مدارک فنی و حرفه‌ای</a><div class="rate-note">بهمراه کارمزد پرداخت</div></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_175">ثبت نام اولیه و تکمیل اطلاعات در سامانه سجاد (وزارت علوم)</a><div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_176">ثبت هر درخواست در سامانه سجاد (وزارت علوم)</a><div class="rate-note">هزینه اسکن مجزا؛ بهمراه کارمزد پرداخت</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_177">سامانه نقل و انتقال دانشگاه آزاد (منادا)</a><div class="rate-note">هزینه اسکن مجزا؛ بهمراه کارمزد پرداخت</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_178">ثبت نام در سامانه تخصصی پزشکان</a></td><td class="rate-price">۵٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_179">تمدید یا ثبت نام بیمه سلامت</a><div class="rate-note">به ازای پرداخت هر فرد ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_180">ثبت نام سهما انباع</a></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_181">پرداخت قبوض با کارت عضو شتاب مشتری با ارائه رسید از دستگاه کارتخوان</a></td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_182">ثبت نام در سامانه همیاب ۲۴</a><div class="rate-note">پرداخت سامانه مجزا محاسبه می‌شود</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_183">جستجوی کدپستی موجود (در نقشه سایت اداره پست)</a><div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_184">درخواست صدور کد پستی جدید در سایت پست</a><div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_185">سنجش بدو ورود (ثبت فرزند، نوبت سنجش)</a><div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۵٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_186">پیش ثبت نام مدارس در سایت my.medu.ir</a><div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_187">هزینه دانلود به ازای هر گیگابایت</a></td><td class="rate-price">۷۴۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_188">هزینه آپلود فایل در صفحات وب به ازای هر مگابایت</a><div class="rate-note">کارمزد خدمات مجزا</div></td><td class="rate-price">۲۱٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_189">ارسال اظهارنامه مالیات بر مستغلات برای ۱ ملک و ۱ مالک و ۱ مستاجر</a><div class="rate-note">برای هر ملک مجزا و یا برای هر مستاجر اضافه ۱٬۳۰۰٬۰۰۰ ریال مجزا؛ املاک شراکتی که ۲ یا چندین مالک دارند، به ازای هر مالک یا شریک، هزینه متصدی طبق این بند مجزا و کامل دریافت می‌شود؛ پرینت و صدور فیش مالیاتی مجزا</div></td><td class="rate-price">۶٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_190">ثبت نام تسهیلات اقتصاد مقاومتی</a></td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_191">ثبت نام تسهیلات و اعطای زمین برای خانواده دارای فرزند سوم یا چهارم</a><div class="rate-note">به ازای ثبت مشخصات هر فرد تحت تکفل مبلغ ۵۰۰٬۰۰۰ ریال اضافه دریافت می‌گردد؛ بدون اسکن</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_192">ثبت نام وام فرزندآوری</a><div class="rate-note">هزینه پیگیری مجزا</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_193">ثبت نام تسهیلات اشتغال کشور</a></td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_194">ثبت هر درخواست در سامانه‌های اینترنت بانک</a></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_195">ثبت نام وام بانک مسکن جدید خرید خانه با سند</a><div class="rate-note">هزینه پرداخت و پرینت و اسکن مجزا؛ بطور کامل</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_196">ثبت نام صندوق‌های مالی</a><div class="rate-note">هزینه اسکن و پرینت مجزا</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_197">احراز هویت سجام</a><div class="rate-note">پرداخت از کارت مشتری</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_198">ثبت نام در سامانه ذینفعان بازار سرمایه به همراه چاپ یک برگ سهام</a></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_199">تعیین نمایندگی و پرداخت وجه خودرو (منتخبین سایپا، ایرانخودرو و ...)</a></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_200">پرداخت هر کدام از بدهی‌های خودرو بصورت مجزا (عوارض آزاد راهی، خلافی)</a></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_201">استعلام و پرینت بیمه‌نامه خودرو</a></td><td class="rate-price">۹۶۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_202">استعلام خلافی (از هر سامانه مانند آب، قبضینو و ...)</a></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_203">درخواست خرید خدمت سربازی</a><div class="rate-note">پرداخت هر قسط بر حسب بند پرداخت حق بیمه</div></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_204">درخواست استفاده از خدمات غیر حضوری برای کارفرمایان</a></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_205">دریافت ابلاغیه سازمان تامین اجتماعی</a><div class="rate-note">هر ابلاغ دیگر ۳۰۰٬۰۰۰ ریال؛ هزینه پرینت مجزا</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_206">ثبت نام اینترنتی در سایت‌های لاتین به ازای یک نفر</a><div class="rate-note">به ازای هر صفحه بیشتر و یا زیر مجموعه بیشتر ۱٬۰۰۰٬۰۰۰ ریال اضافه می‌گردد</div></td><td class="rate-price">۵٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_207">استعلام بدهی کارگاه</a><div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_208">ثبت درخواست قسط بدهی کارگاه</a><div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_209">پرداخت بدهی‌های ابلاغ‌شده کارگاه</a><div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_210">اعتراض به سابقه دارایی کسری کارکرد یا اشکال به ازای هر کارگاه</a></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_211">استعلام برخورداری از حمایت درمانی</a></td><td class="rate-price">۷۲۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_212">درخواست غرامت دستمزد بیماری</a><div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_213">ثبت نام بیمه تکمیلی تأمین اجتماعی</a><div class="rate-note">ثبت هر نفر زیر مجموعه ۶۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_214">ثبت شماره حساب مستمری‌بگیران</a></td><td class="rate-price">۷۲۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_215">ثبت مشاغل سخت و زیان‌آور به ازای یک کارگاه</a><div class="rate-note">هر کارگاه ۱٬۱۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_216">ثبت قرارداد، ارسال لایحه، ثبت دادخواست، شکوائیه و ... برای وکلا</a></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_217">استعلام CMS و قراردادهای وکلا</a><div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td><a class="rate-link" href="https://t.me/Blockchainlan_bot?start=req_218">استعلام ثبت نام ثنا با یک پرینت</a></td><td class="rate-price">۷۷۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
         <div class="no-result" id="ratesNoResult">نرخی با این نام پیدا نشد. برای استعلام تماس بگیر: <a href="tel:+989111433254" dir="ltr" style="font-weight:900">0911 143 3254</a></div>
