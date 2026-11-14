@@ -322,6 +322,17 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
 .callbar .btn{flex:1;min-height:48px;white-space:nowrap;font-size:.9rem;padding-inline:10px}
 .callbar .btn:first-child{flex:1.5}
 @media(max-width:820px){.callbar{display:flex}}
+
+/* ---------- Rates ---------- */
+.rates-block{margin-top:48px}
+.rates-block>h2{font-size:clamp(1.35rem,3vw,1.7rem);font-weight:900}
+.rates-block>p{color:var(--muted);margin-top:8px;max-width:44rem}
+.rates-group{margin-top:32px;font-size:1.1rem;font-weight:900;color:var(--gold)}
+.rates-table{width:100%;border-collapse:collapse;margin-top:8px}
+.rates-table th{text-align:right;color:var(--muted);font-size:.85rem;font-weight:800;padding:10px 0;border-bottom:1px solid var(--line)}
+.rates-table td{padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.rates-table td.rate-price{white-space:nowrap;text-align:left;font-weight:900;color:var(--gold);padding-inline-start:16px}
+.rate-note{color:var(--muted);font-size:.85rem;margin-top:2px}
 </style>
 </head>
 <body>
@@ -854,6 +865,306 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
         </article>
       </div>
       <div class="no-result" id="noResult">خدمتی با این نام پیدا نشد. برای کاری که مدنظرت است تماس بگیر؛ احتمالاً انجامش می‌دهیم: <a href="tel:+989111433254" dir="ltr" style="font-weight:900">0911 143 3254</a></div>
+      <div class="rates-block" id="rates">
+        <h2>نرخ خدمات</h2>
+        <p>نرخ خدمات کافی‌نت بلاکچین — سال ۱۴۰۵. همه مبالغ به <b>ریال</b> است. پرداخت‌های داخل سامانه‌ها جداگانه محاسبه می‌شود.</p>
+        <h3 class="rates-group">خدمات سیستم</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>هزینه استفاده از اینترنت به غیر از حجم دانلود — یک ربع</td><td class="rate-price">۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>هزینه استفاده از اینترنت به غیر از حجم دانلود — نیم ساعت</td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>هزینه استفاده از اینترنت به غیر از حجم دانلود — یک ساعت</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">ثبت نام اینترنتی</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>ثبت نام اینترنتی برای تمام صفحات به ازای هر مراجعه‌کننده<div class="rate-note">تا ۱۰ دقیقه، بعد از ۱۰ دقیقه به ازای هر ۱۰ دقیقه ۶۵۰٬۰۰۰ ریال؛ بدون احتساب هزینه اسکن و پرینت</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">امور قضایی</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>دریافت ابلاغیه قضایی<div class="rate-note">همراه با پرینت</div></td><td class="rate-price">۵۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>نوبت‌دهی قضایی<div class="rate-note">در صورت ناموفق بودن بابت ورود به سامانه ۵۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>بازیابی رمز شخصی بطور کامل</td><td class="rate-price">۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت عدم سوء پیشینه<div class="rate-note">۵۰۰٬۰۰۰ ریال هزینه پاسخ استعلام مطابق با دریافت ابلاغ (متن در سند ناقص است)</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت ثنا و احراز هویت<div class="rate-note">بدون احتساب پرداخت در سامانه</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرداخت هزینه‌های آنلاین<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پیگیری پرونده قضایی به صورت آنلاین</td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">امور بیمه</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>ثبت نام در سامانه تامین اجتماعی</td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>گواهی حقوق و صدور گواهی کسر از حقوق<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>انعقاد قرارداد بیمه تامین اجتماعی و سایر خدمات درون سایتی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>دریافت سوابق تامین اجتماعی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>دریافت فیش حقوق – حکم بازنشستگی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت درخواست در سامانه جامع روابط کار بیمه بیکاری<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>احراز هویت سامانه جامع کار<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>نام‌نویسی نیروی کار در کارگاه در صورت ثبت اولیه و بارگذاری مدارک<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال لیست بیمه کارکنان تا سه نفر در کارگاه<div class="rate-note">بدون احتساب پرینت؛ به ازای هر نفر اضافه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرداخت حق بیمه آنلاین لیست بیمه<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت و پرداخت حق بیمه آنلاین و بیمه‌های اختیاری<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اعتراض به بدهی‌های کارگاهی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست بازرسی مجدد یا درخواست بازرسی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>هزینه ثبت بازرسی دفاتر قانونی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۵٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت درخواست بازنشستگی در سامانه تامین اجتماعی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت هدیه ازدواج – کمک هزینه مراسم ترحیم<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت برقراری مستمری بازنشستگی<div class="rate-note">بدون احتساب ۸۰۰٬۰۰۰ ریال، مراحل بعدی و پیگیری هر نوبت پرینت و اسکن</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت تعهدنامه بازمانده دختر در کارتابل تامین اجتماعی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>نامه کسر از اقساط بازنشستگان کشوری<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>افزودن افراد تبعی در پروفایل تامین به ازای هر نفر<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت کمیسیون پزشکی جهت بازنشستگی (شروع اولیه جهت ثبت و پرینت)<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>کمک هزینه عینک / سمعک<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">پرینت – اسکن – تایپ – ایمیل</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>پرینت لیزری سیاه و سفید هر برگ A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرینت لیزری سیاه و سفید ۲ رو هر برگ A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۹۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرینت لیزری سیاه و سفید هر برگ A5<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۱۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرینت لیزری سیاه و سفید هر برگ A3<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۲۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرینت رنگی بصورت متن در یک صفحه A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۲۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرینت رنگی بصورت عکس در یک صفحه A4<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۳۴۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرینت رنگی بصورت عکس در صفحه A5<div class="rate-note">برای کاغذ معمولی</div></td><td class="rate-price">۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اسکن سیاه و سفید یا رنگی تا سایز A4 هر برگ<div class="rate-note">بدون برش و تنظیمات سایز A4 هر برگ ۲۸۰٬۰۰۰ ریال</div></td><td class="rate-price">۲۴۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال و یا دریافت فکس هر برگ داخل کشور<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال و یا دریافت فکس هر برگ خارج کشور<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۴۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تایپ ساده فوری حداقل هر برگ ۱۸ سطر فونت ۱۶</td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تایپ تیتر مشکی A4 همراه با یک برگ پرینت<div class="rate-note">رنگی ۷۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۴۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ایجاد ایمیل توسط اپراتور واحد صنفی<div class="rate-note">بدون نصب و راه‌اندازی دستگاه</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال و دریافت ایمیل توسط اپراتور واحد صنفی<div class="rate-note">بدون احتساب آپلود و دانلود فایل</div></td><td class="rate-price">۵۶۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ایجاد هر صفحه در پاورپوینت<div class="rate-note">ساده بدون محتواسازی</div></td><td class="rate-price">۴۵۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">ثبت نام های تخصصی</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>ثبت نام در سامانه میخک (وزارت امور خارجه)</td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت درخواست‌ها در سامانه میخک</td><td class="rate-price">۳٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام پذیرش دانشگاه‌های آزاد<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۴٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام پذیرش دانشگاه پیام نور<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۴٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام پذیرش غیر حضوری دانشگاه‌های دولتی<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت</div></td><td class="rate-price">۸٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام دانشگاه آزاد و سراسری بر اساس سوابق تحصیلی<div class="rate-note">با احتساب خرید کارت و پرینت؛ خرید هر کارت اضافی ۶۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>انتخاب رشته کنکور سراسری و آزاد با احتساب پرینت تا ۴۰ کد<div class="rate-note">هر کد اضافی مبلغ ۸۰٬۰۰۰ ریال اضافه می‌شود</div></td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ویرایش کد انتخاب رشته دانشگاه آزاد و سراسری</td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام اولیه سامانه سخا<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>احراز نشانی پست<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت هر خدمت سخا<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سامانه GICA<div class="rate-note">بدون اسکن و پرینت و پرداخت با کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام اولیه ستاد ایران<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۶٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت مزایده<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۶٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت مناقصه<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۱۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت خرید<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام پلمب دفاتر قانونی<div class="rate-note">بدون احتساب پرینت و اسکن و پرداخت با کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>امضا با توکن در سایت ثبت من<div class="rate-note">هر امضا اضافی ۱٬۷۰۰٬۰۰۰ ریال؛ بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>امضا با پلتفرم‌های نرم‌افزاری<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۸٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>راه‌اندازی توکن<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۸٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست انحصار وراثت<div class="rate-note">احراز هویت هدی و دریافت ابلاغ ۳٬۷۵۰٬۰۰۰ ریال؛ بدون احتساب پرداخت و پرینت</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام فیدا اتباع با پرداخت<div class="rate-note">بدون احتساب مبلغ پرداخت به سایت</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">ثبت نام های عمومی</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>ثبت نام وام ازدواج به ازای هر نفر</td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام اولیه ایران خودرو و سایپا و سامانه یکپارچه<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>انتخاب خودرو ایران خودرو و سایپا و سامانه یکپارچه<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام و پرداخت مالیات نقل و انتقال خودرو<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرداخت خلافی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۹۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>احراز نشانی پست<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>نوبت‌دهی تعویض پلاک<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تاییدیه تحصیلی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تاییدیه پستی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام مسکن ملی<div class="rate-note">به ازای هر فرد زیر مجموعه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام وام ودیعه مسکن<div class="rate-note">به ازای هر فرد زیر مجموعه ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سامانه اسکان و املاک<div class="rate-note">به ازای هر ملک اضافه ۱٬۶۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>سامانه خودنویس — فقط تایپ و انجام امور اینترنتی قرارداد مالک و مستاجر (حضور مالک و مستاجر الزامی است و ثبت قرارداد به درخواست مشتری می‌باشد)<div class="rate-note">ثبت آدرس سکونت در سامانه املاک و اسکان برای طرفین بصورت جداگانه طبق ردیف ۸۸ محاسبه می‌گردد؛ هر شریک اضافه ۳٬۲۰۰٬۰۰۰ ریال؛ هر طرف حقوقی مبلغ ۴٬۰۰۰٬۰۰۰ ریال اضافه می‌گردد؛ بدون احتساب پرینت</div></td><td class="rate-price">۱۶٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سند ملکی در سایت (sabtemelk.ssaa.ir)<div class="rate-note">بدون احتساب هزینه اسکن، پرینت و پرداخت</div></td><td class="rate-price">۹٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سجام به همراه پرداخت<div class="rate-note">بدون احراز هویت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام تهران من خودرو<div class="rate-note">بدون اسکن مدارک</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام یارانه سوخت وانت بار (پروانه فعالیت – پروانه اشتغال)<div class="rate-note">بدون احتساب اسکن و پرینت</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>بازیابی نام کاربری و رمز عبور</td><td class="rate-price">۵۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام کتب درسی<div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۱٬۱۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام مدارس نمونه دولتی – استعدادهای درخشان<div class="rate-note">بدون احتساب پرینت؛ پرداخت از کارت مشتری</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام کارت ملی هوشمند<div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>خرید و پرداخت اینترنتی<div class="rate-note">با کارت مشتری؛ بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>حق‌الزحمه اپراتور و هزینه اینترنت جهت دریافت فیش و حکم حقوقی، کارت ورود به جلسه، استعلام سهام عدالت، دریافت قبوض آب و برق و تلفن و ...<div class="rate-note">بدون پرینت</div></td><td class="rate-price">۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>هزینه هر گونه استعلام خبری از اینترنت که ساده و بدون پرینت باشد</td><td class="rate-price">۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استخراج مطلب از طریق اینترنت توسط اپراتور<div class="rate-note">تا ۱۰ دقیقه؛ بعد از ۱۰ دقیقه به ازای هر ۵ دقیقه ۸۰۰٬۰۰۰ ریال؛ بدون احتساب هزینه اسکن و پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>دریافت فایل مجاز از شبکه‌های اجتماعی به ازای هر فایل<div class="rate-note">برای ۱ فایل؛ به ازای هر فایل اضافه ۸۰٬۰۰۰ ریال؛ بدون احتساب پرینت</div></td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>رایت CD<div class="rate-note">بدون احتساب CD خام</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>رایت DVD<div class="rate-note">بدون احتساب DVD خام</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام کارت منزلت<div class="rate-note">پرداخت با کارت مشتری</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام وام بازنشستگان<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت اعتراض یارانه<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام بیمه ورزشی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>سامانه ثبت من به ازای هر خدمت<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">خدمات مالیات</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>ثبت نام درگاه ملی سازمان امور مالیاتی</td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>فراموشی رمز سامانه مالیاتی</td><td class="rate-price">۴۷۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت اعتراض مالیاتی در سامانه my.tax</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه گروه ۲<div class="rate-note">ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۱۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه عادی ماده ۹۵<div class="rate-note">محاسبات توسط مودی یا حسابدار مربوطه؛ ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۸٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه تبصره ۱۰۰ بدون عملکرد (صفر)<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه تبصره ۱۰۰<div class="rate-note">ورود به سامانه و ارسال اظهارنامه برای یک مودی؛ بدون احتساب پرینت؛ توجه: بابت بروزرسانی کد اقتصادی، چک و اعلام ضریب اینتاکد و نحوه اتصال پذیرنده مالیاتی به پرونده مشتری جمعاً مبلغ ۱٬۶۰۰٬۰۰۰ ریال دریافت می‌شود</div></td><td class="rate-price">۵٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>هر شریک در اظهارنامه<div class="rate-note">مبلغ در توضیحات اظهارنامه مشخص است</div></td><td class="rate-price">—</td></tr>
+            <tr><td>اظهارنامه مستغلات به ازای هر مالک<div class="rate-note">به ازای یک ملک و یک مستاجر؛ ملک اضافی ۳٬۰۰۰٬۰۰۰ ریال؛ هر مستاجر اضافی ۱٬۱۰۰٬۰۰۰ ریال اضافه خواهد شد؛ بدون احتساب پرینت</div></td><td class="rate-price">۶٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه حقوقی غیر فعال (عملکرد صفر)</td><td class="rate-price">۶٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>صدور فیش اظهارنامه<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۳۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه ارث تا ۳ مورد ماترک<div class="rate-note">به ازای هر ماترک اضافه ۹۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه اصلاحی تنظیم‌شده توسط واحد صنفی</td><td class="rate-price">۵۰ درصد نرخ</td></tr>
+            <tr><td>پرداخت قبض مالیات<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام کد اقتصادی بصورت کامل<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۵٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>افزودن هر شریک در ثبت نام<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ویرایش پیش ثبت نام کد اقتصادی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سامانه مودیان و دریافت کد یکتا بطور کامل<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱۰٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال اظهارنامه ارزش افزوده<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال لیست معاملات فصلی با یک رکورد – خرید یا فروش<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت رکورد معاملات فصلی به ازای هر خرید و یا فروش مازاد<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال لیست مالیات حقوق کارکنان تا ۴ نفر<div class="rate-note">به ازای هر پرسنل اضافه ۸۰۰٬۰۰۰ ریال؛ بدون احتساب پرینت</div></td><td class="rate-price">۳٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>افزودن هر پرسنل جدید به لیست مالیات حقوق</td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام و پرداخت مالیات خودرو و خانه‌های لوکس<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اعتراض به مالیات بر خودرو و خانه لوکس، خانه‌های خالی همراه با درج متن اعتراض<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ابلاغیه‌های مالیاتی به ازای هر ابلاغ<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اظهارنامه مشاغل خودرویی<div class="rate-note">بدون احتساب پرینت و پرداخت</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ورود به سامانه واکنش مالیاتی تا ۵ مورد<div class="rate-note">به ازای هر آیتم اضافی ۲۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۰۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">خدمات بانکی</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>ثبت نام سامانه بام</td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام حساب ارزی</td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>افتتاح حساب و احراز هویت بانک‌ها</td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت چک صیادی با پرینت</td><td class="rate-price">۱٬۱۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تایید چک صیادی با پرینت</td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سامانه شمس</td><td class="rate-price">۷٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>خرید و پرداخت اینترنتی<div class="rate-note">بدون احتساب پرینت</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>افتتاح حساب و اعتبار سنجی مرآت رسالت</td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>سفته الکترونیکی</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ضمانت سفته الکترونیکی</td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">خدمات مجوز فعالیت و پروانه کسب</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>ورود به سامانه ملی مجوزها و ثبت نام اولیه</td><td class="rate-price">۱٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست احراز نشانی</td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام گواهی ۱۸۶ مالیاتی و کارت پایان خدمت و ایثارگری و محکومیت (هر کدام)</td><td class="rate-price">۱٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست بازدید اماکن در پلیس من<div class="rate-note">ثبت اعتراض ۱٬۴۲۰٬۰۰۰ ریال</div></td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>نوین اصناف و ثبت نام مراحل اشخاص حقیقی<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>به ازای هر شریک و مباشر</td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>نوین اصناف و ثبت نام مراحل اشخاص حقوقی</td><td class="rate-price">۷٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرداخت الکترونیکی مبلغ صدور جواز از کارت مشتری (هر پرداخت)</td><td class="rate-price">۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام کلاس آموزش اصناف<div class="rate-note">بدون احتساب پرینت و اسکن</div></td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام صلاحیت بهداشتی در سامانه سامح</td><td class="rate-price">۵٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تکمیل اطلاعات سامانه جامع آموزش مداوم پزشکی</td><td class="rate-price">۵٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>سامانه پاتمک</td><td class="rate-price">۶٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>سامانه سپامک</td><td class="rate-price">۹٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>عضویت نظام مهندسی</td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>دریافت شناسه یکتا برای مجوزهای قدیمی</td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>دریافت کد نقش</td><td class="rate-price">۳٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>کارت سوخت</td><td class="rate-price">۱٬۷۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت تغییرات (تغییر آدرس، تغییر رسته و ...) در سامانه مجوزها و نوین اصناف</td><td class="rate-price">۴٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت مجوز مشاغل خانگی</td><td class="rate-price">۲٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت آدرس در سامانه ncr (ثبت حوال)</td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سامانه سپتام<div class="rate-note">هزینه اسکن و پرداخت مجزا</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت درخواست مجوز ماه رمضان در پلیس اماکن<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۲٬۷۰۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">سایر خدمات</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+            <tr><td>استعلامات سایت پلیس من</td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>خرید بلیط هواپیما (به ازای هر نفر) به طور کامل<div class="rate-note">مبلغ پرداخت از کارت مشتری</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>خرید بلیط قطار و اتوبوس (به ازای هر نفر) به طور کامل<div class="rate-note">مبلغ پرداخت از کارت مشتری</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تحقیق ساده دانش‌آموزی به ازای هر برگ</td><td class="rate-price">۳۷۰٬۰۰۰ ریال</td></tr>
+            <tr><td>جستجو مطالب لاتین توسط اپراتور واحد صنفی<div class="rate-note">هر مطلب جداگانه محاسبه می‌شود</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام در سامانه فنی حرفه‌ای مانند کارگران ساختمانی، قالیبافان و ...<div class="rate-note">اسکن و پرینت مجزا و پرداخت از کارت مشتری</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>انتخاب واحد دانشگاه آزاد، ورود و اخذ تا یک درس و ثبت درخواست مجوز انتخاب واحد (بدون تعیین وقت توسط مشتری)<div class="rate-note">هر انتخاب اضافه ۲۴۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>انتخاب واحد دانشگاه‌های پیام نور و سراسری و علمی کاربردی<div class="rate-note">هزینه پرینت و پرداخت مجزا؛ هر درس اضافه ۱۶۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>جستجوی هر کد ثبت‌نامی در دفترچه‌های آزمون‌ها و ثبت نام‌ها (دانشگاه‌ها و استخدامی‌ها و ...)</td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت ملک در سامانه کرج من و یا هر درخواست مجزا در سامانه (شهرداری)<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام گواهینامه و تمدید مدارک فنی و حرفه‌ای<div class="rate-note">بهمراه کارمزد پرداخت</div></td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام اولیه و تکمیل اطلاعات در سامانه سجاد (وزارت علوم)<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت هر درخواست در سامانه سجاد (وزارت علوم)<div class="rate-note">هزینه اسکن مجزا؛ بهمراه کارمزد پرداخت</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>سامانه نقل و انتقال دانشگاه آزاد (منادا)<div class="rate-note">هزینه اسکن مجزا؛ بهمراه کارمزد پرداخت</div></td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام در سامانه تخصصی پزشکان</td><td class="rate-price">۵٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تمدید یا ثبت نام بیمه سلامت<div class="rate-note">به ازای پرداخت هر فرد ۵۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام سهما انباع</td><td class="rate-price">۳٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرداخت قبوض با کارت عضو شتاب مشتری با ارائه رسید از دستگاه کارتخوان</td><td class="rate-price">۲۵۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام در سامانه همیاب ۲۴<div class="rate-note">پرداخت سامانه مجزا محاسبه می‌شود</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>جستجوی کدپستی موجود (در نقشه سایت اداره پست)<div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست صدور کد پستی جدید در سایت پست<div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>سنجش بدو ورود (ثبت فرزند، نوبت سنجش)<div class="rate-note">مبلغ پرداختی مجزا</div></td><td class="rate-price">۵٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پیش ثبت نام مدارس در سایت my.medu.ir<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۳٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>هزینه دانلود به ازای هر گیگابایت</td><td class="rate-price">۷۴۰ ریال</td></tr>
+            <tr><td>هزینه آپلود فایل در صفحات وب به ازای هر مگابایت<div class="rate-note">کارمزد خدمات مجزا</div></td><td class="rate-price">۲۱٬۰۰۰ ریال</td></tr>
+            <tr><td>ارسال اظهارنامه مالیات بر مستغلات برای ۱ ملک و ۱ مالک و ۱ مستاجر<div class="rate-note">برای هر ملک مجزا و یا برای هر مستاجر اضافه ۱٬۳۰۰٬۰۰۰ ریال مجزا؛ املاک شراکتی که ۲ یا چندین مالک دارند، به ازای هر مالک یا شریک، هزینه متصدی طبق این بند مجزا و کامل دریافت می‌شود؛ پرینت و صدور فیش مالیاتی مجزا</div></td><td class="rate-price">۶٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام تسهیلات اقتصاد مقاومتی</td><td class="rate-price">۳٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام تسهیلات و اعطای زمین برای خانواده دارای فرزند سوم یا چهارم<div class="rate-note">به ازای ثبت مشخصات هر فرد تحت تکفل مبلغ ۵۰۰٬۰۰۰ ریال اضافه دریافت می‌گردد؛ بدون اسکن</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام وام فرزندآوری<div class="rate-note">هزینه پیگیری مجزا</div></td><td class="rate-price">۲٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام تسهیلات اشتغال کشور</td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت هر درخواست در سامانه‌های اینترنت بانک</td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام وام بانک مسکن جدید خرید خانه با سند<div class="rate-note">هزینه پرداخت و پرینت و اسکن مجزا؛ بطور کامل</div></td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام صندوق‌های مالی<div class="rate-note">هزینه اسکن و پرینت مجزا</div></td><td class="rate-price">۴٬۰۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>احراز هویت سجام<div class="rate-note">پرداخت از کارت مشتری</div></td><td class="rate-price">۱٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام در سامانه ذینفعان بازار سرمایه به همراه چاپ یک برگ سهام</td><td class="rate-price">۲٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>تعیین نمایندگی و پرداخت وجه خودرو (منتخبین سایپا، ایرانخودرو و ...)</td><td class="rate-price">۴٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرداخت هر کدام از بدهی‌های خودرو بصورت مجزا (عوارض آزاد راهی، خلافی)</td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام و پرینت بیمه‌نامه خودرو</td><td class="rate-price">۹۶۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام خلافی (از هر سامانه مانند آب، قبضینو و ...)</td><td class="rate-price">۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست خرید خدمت سربازی<div class="rate-note">پرداخت هر قسط بر حسب بند پرداخت حق بیمه</div></td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست استفاده از خدمات غیر حضوری برای کارفرمایان</td><td class="rate-price">۱٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>دریافت ابلاغیه سازمان تامین اجتماعی<div class="rate-note">هر ابلاغ دیگر ۳۰۰٬۰۰۰ ریال؛ هزینه پرینت مجزا</div></td><td class="rate-price">۶۸۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام اینترنتی در سایت‌های لاتین به ازای یک نفر<div class="rate-note">به ازای هر صفحه بیشتر و یا زیر مجموعه بیشتر ۱٬۰۰۰٬۰۰۰ ریال اضافه می‌گردد</div></td><td class="rate-price">۵٬۸۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام بدهی کارگاه<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت درخواست قسط بدهی کارگاه<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۹۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>پرداخت بدهی‌های ابلاغ‌شده کارگاه<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۲۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>اعتراض به سابقه دارایی کسری کارکرد یا اشکال به ازای هر کارگاه</td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام برخورداری از حمایت درمانی</td><td class="rate-price">۷۲۰٬۰۰۰ ریال</td></tr>
+            <tr><td>درخواست غرامت دستمزد بیماری<div class="rate-note">هزینه اسکن مجزا</div></td><td class="rate-price">۱٬۶۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت نام بیمه تکمیلی تأمین اجتماعی<div class="rate-note">ثبت هر نفر زیر مجموعه ۶۵۰٬۰۰۰ ریال</div></td><td class="rate-price">۲٬۴۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت شماره حساب مستمری‌بگیران</td><td class="rate-price">۷۲۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت مشاغل سخت و زیان‌آور به ازای یک کارگاه<div class="rate-note">هر کارگاه ۱٬۱۰۰٬۰۰۰ ریال</div></td><td class="rate-price">۴٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>ثبت قرارداد، ارسال لایحه، ثبت دادخواست، شکوائیه و ... برای وکلا</td><td class="rate-price">۴٬۵۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام CMS و قراردادهای وکلا<div class="rate-note">هزینه پرینت مجزا</div></td><td class="rate-price">۱٬۳۰۰٬۰۰۰ ریال</td></tr>
+            <tr><td>استعلام ثبت نام ثنا با یک پرینت</td><td class="rate-price">۷۷۰٬۰۰۰ ریال</td></tr>
+          </tbody>
+        </table>
+        <h3 class="rates-group">توضیحات پایانی سند (صفحه ۱۴)</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+          </tbody>
+        </table>
+        <h3 class="rates-group">موارد نامشخص / نیازمند بررسی</h3>
+        <table class="rates-table">
+          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
