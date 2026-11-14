@@ -333,6 +333,8 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
 .rates-table td{padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top}
 .rates-table td.rate-price{white-space:nowrap;text-align:left;font-weight:900;color:var(--gold);padding-inline-start:16px}
 .rate-note{color:var(--muted);font-size:.85rem;margin-top:2px}
+.rates-search{margin:20px 0 4px}
+.rates-search input{width:340px;max-width:100%}
 </style>
 </head>
 <body>
@@ -868,6 +870,10 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
       <div class="rates-block" id="rates">
         <h2>نرخ خدمات</h2>
         <p>نرخ خدمات کافی‌نت بلاکچین — سال ۱۴۰۵. همه مبالغ به <b>ریال</b> است. پرداخت‌های داخل سامانه‌ها جداگانه محاسبه می‌شود.</p>
+        <div class="search-box rates-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="ratesSearch" type="search" placeholder="جست‌وجوی نرخ… مثلاً ثنا یا پرینت" aria-label="جست‌وجوی نرخ خدمات" />
+        </div>
         <h3 class="rates-group">خدمات سیستم</h3>
         <table class="rates-table">
           <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
@@ -1152,18 +1158,7 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
             <tr><td>استعلام ثبت نام ثنا با یک پرینت</td><td class="rate-price">۷۷۰٬۰۰۰ ریال</td></tr>
           </tbody>
         </table>
-        <h3 class="rates-group">توضیحات پایانی سند (صفحه ۱۴)</h3>
-        <table class="rates-table">
-          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
-          <tbody>
-          </tbody>
-        </table>
-        <h3 class="rates-group">موارد نامشخص / نیازمند بررسی</h3>
-        <table class="rates-table">
-          <thead><tr><th>خدمت</th><th>نرخ (ریال)</th></tr></thead>
-          <tbody>
-          </tbody>
-        </table>
+        <div class="no-result" id="ratesNoResult">نرخی با این نام پیدا نشد. برای استعلام تماس بگیر: <a href="tel:+989111433254" dir="ltr" style="font-weight:900">0911 143 3254</a></div>
       </div>
     </div>
   </section>
@@ -1453,6 +1448,39 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 90px;colo
     }
   });
 })();
+
+// Rates search
+(function(){
+  var search = document.getElementById('ratesSearch');
+  if (!search) return;
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.rates-table tbody tr'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.rates-group'));
+  var tables = Array.prototype.slice.call(document.querySelectorAll('.rates-table'));
+  var noResult = document.getElementById('ratesNoResult');
+  function norm(s){
+    return (s || '').replace(/[۰-۹]/g, function(d){ return String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)); })
+      .replace(/[٠-٩]/g, function(d){ return String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)); })
+      .replace(/[٬,،\s]/g, '');
+  }
+  function apply(){
+    var q = norm((search.value || '').trim());
+    var visible = 0;
+    rows.forEach(function(row){
+      var show = !q || norm(row.textContent).indexOf(q) !== -1;
+      row.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    groups.forEach(function(g, i){
+      var tb = tables[i], any = false;
+      if (tb) Array.prototype.slice.call(tb.querySelectorAll('tbody tr')).forEach(function(r){ if (r.style.display !== 'none') any = true; });
+      g.style.display = any ? '' : 'none';
+      if (tb) tb.style.display = any ? '' : 'none';
+    });
+    if (noResult) noResult.style.display = visible === 0 ? 'block' : 'none';
+  }
+  search.addEventListener('input', apply);
+})();
+
 </script>
 </body>
 </html>
